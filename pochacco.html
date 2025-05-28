@@ -32,8 +32,11 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- Font Awesome CDN (v6 recommended) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<body>
+<body class="cnt-home">
 <!-- ============================================== HEADER ============================================== -->
 <header class="header-style-1"> 
   
@@ -43,24 +46,27 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-heart"></i>Ցանկությունների ցանկ</a></li>
+            <!-- <li><a href="#"><i class="icon fa fa-heart"></i>Ցանկությունների ցանկ</a></li>
             <li><a href="#"><i class="icon fa fa-shopping-cart"></i>Իմ Սայլը</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Դրամարկղ</a></li>
+            <li><a href="#"><i class="icon fa fa-check"></i>Դրամարկղ</a></li> -->
             <!-- <li><a href="sign-in.html"><i class="icon fa fa-lock"></i>Become a Vendor</a></li> -->
+             <li><a href="products.html"><i class="icon fas fa-shopping-bag"></i><span>Ապրանքներ</span></a></li>
+             <li><a href="blog.html"><i class="icon fas fa-newspaper"></i><span>Հետաքրիր Տեղեկություններ</span></a></li>
+             <li><a href="contact.html"><i class="icon fas fa-phone"></i><span>Կապ Մեզ Հետ</span></a></li>
           </ul>
         </div>
         <!-- /.cnt-account -->
         
         <div class="cnt-block">
           <ul class="list-unstyled list-inline">
-            <li> <a href="#"><span class="value">Մեր Մասին </span></a></li>
-            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">Հայերեն </span><b class="caret"></b></a>
+            <li> <a href="about.html"><span class="value">Մեր Մասին </span></a></li>
+            <!-- <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">Հայերեն </span><b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Հայերեն</a></li>
                 <li><a href="#">English</a></li>
                 <li><a href="#">Русский</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
            <!-- /.list-unstyled  -->
         </div>
@@ -78,7 +84,7 @@
       <div class="row">
         <div class="col-xs-12 col-lg-2 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="index.html"> <img src="assets/images/logo.png" alt="logo"> </a> </div>
+          <div class="logo"> <a href="index.html"> <img src="assets/images/logo.png" alt="DailyBox"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -109,7 +115,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Գլխավոր</a></li>
                 <li><a href="products.html">Ապրանքներ</a></li>
-                <li><a href="#">Կապ</a></ul>
+                <li><a href="contact.html">Կապ</a></ul>
                 </li>
             
               </ul>
@@ -127,7 +133,15 @@
       <div class="top-cart-row"> 
           <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
           
-          <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+          <div class="dropdown dropdown-cart"> 
+            <a href="tel:+37498880237" class="lnk-cart">
+              <div class="items-cart-inner">
+                <div class="basket"> <i class="glyphicon glyphicon-phone"></i> </div>
+                <div class="total-price-basket"> <span class="lbl">Զանգել</span>  </div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
             <div class="items-cart-inner">
               <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
               <div class="basket-item-count"><span class="count">2</span></div>
@@ -148,7 +162,6 @@
                     <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
                   </div>
                 </div>
-                <!-- /.cart-item -->
                 <div class="clearfix"></div>
                 <hr>
                 <div class="clearfix cart-total">
@@ -156,15 +169,13 @@
                   <div class="clearfix"></div>
                    <a href="shopping-cart.html" class="btn btn-upper btn-primary btn-block m-t-20">Դիտել Սայլը</a>
                   <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20 btn-check">Դրամարկղ</a> </div>
-                <!-- /.cart-total--> 
                 
               </li>
             </ul>
-            <!-- /.dropdown-menu--> 
           </div>
-          <!-- /.dropdown-cart --> 
+          </div> /.dropdown-cart  -->
           
-          <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> </div>
+          <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> 
     </div>
     <!-- /.container-class --> 
     
@@ -777,95 +788,95 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio officiis at
 </div>
     <!-- ============================================================= FOOTER ============================================================= -->
     <footer id="footer" class="footer color-bg">
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <div class="module-heading">
-                <h4 class="module-title">Օգնություն և Աջակցություն</h4>
-              </div>
-              <!-- /.module-heading -->
-              
-              <div class="module-body">
-                <ul class='list-unstyled'>
-                  <li class="first"><a href="#" title="Contact us">Օգտագործման Պայմաններ</a></li>
-                  <li><a href="#" title="faq">Գաղտնիության Քաղաքականություն</a></li>
-                  <li class="last"><a href="#" title="Where is my order?">Առաքումներ</a></li>
-                </ul>
-              </div>
-              <!-- /.module-body --> 
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <div class="module-heading">
-                <h4 class="module-title">Հաճախորդների Սպասարկում</h4>
-              </div>
-              <!-- /.module-heading -->
-              
-              <div class="module-body">
-                <ul class='list-unstyled'>
-                  <li class="first"><a href="#" title="Contact us">Ծառայություններ</a></li>
-                  <li><a href="#" title="faq">ՀՏՀ</a></li>
-                  <li class="last"><a href="#" title="Where is my order?">Օգնության Կենտրոն</a></li>
-                </ul>
-              </div>
-              <!-- /.module-body --> 
-            </div>
-            <!-- /.col -->
-            
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-              <div class="module-heading">
-                <h4 class="module-title">Ինչու Մենք</h4>
-              </div>
-              <!-- /.module-heading -->
-              
-              <div class="module-body">
-                <ul class='list-unstyled'>
-                  <li class="first"><a href="#" title="About us">Մեր Մասին</a></li>
-                  <li><a href="#" title="Blog">Բլոգ</a></li>
-                  <li class=" last"><a href="contact-us.html" title="Suppliers">Կապ Մեզ Հետ</a></li>
-                </ul>
-              </div>
-              <!-- /.module-body --> 
-            </div>
+  <!-- <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="module-heading">
+            <h4 class="module-title">Օգնություն և Աջակցություն</h4>
           </div>
-        </div>
-      </div>
-      <div class="copyright-bar white-bg">
-        <div class="container">
-          <div class="col-xs-12 col-sm-7 col-md-12 col-lg-7 del-info">
-            Մենք ունենք մեր սեփական առաքման ավտոմեքենաների փականը։ Ձեր պատվերները կփաթեթավորվեն ուշադիր մեր պահեստում և առաքվեն ուղիղ ձեր դուռը մեր բարեկամական DailyBox թիմի կողմից։
-          </div>
+          /.module-heading 
           
-          <div class="col-xs-12 col-sm-5 col-md-12 col-lg-5 no-padding">
-            <div class="clearfix payment-methods">
-              <ul>
-                <li><img src="assets/images/payments/1.png" alt=""></li>
-                <li><img src="assets/images/payments/2.png" alt=""></li>
-                <li><img src="assets/images/payments/3.png" alt=""></li>
-                <li><img src="assets/images/payments/4.png" alt=""></li>
-               
-              </ul>
-            </div>
-            <!-- /.payment-methods --> 
-          </div>
-        </div>
-      </div>
-      <div class="copyright-bar">
-        <div class="container">
-          <div class="col-xs-12 col-sm-12 no-padding social">
-            <ul class="link">
-              <li class="fb"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
-              <li class="tw"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
-              <li class="instagram"><a target="_blank" rel="nofollow" href="#" title="Instagram"></a></li>
-              <li class="pintrest"><a target="_blank" rel="nofollow" href="#" title="Pinterest"></a></li>
-              <li class="youtube"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li class="first"><a href="#" title="Contact us">Օգտագործման Պայմաններ</a></li>
+              <li><a href="#" title="faq">Գաղտնիության Քաղաքականություն</a></li>
+              <li class="last"><a href="#" title="Where is my order?">Առաքումներ</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-12 no-padding copyright">&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> DailyBox: Բոլոր իրավունքները պաշտպանված են: </div>
+          /.module-body 
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="module-heading">
+            <h4 class="module-title">Հաճախորդների Սպասարկում</h4>
+          </div>
+          </.module-heading >
           
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li class="first"><a href="#" title="Contact us">Ծառայություններ</a></li>
+              <li><a href="#" title="faq">ՀՏՀ</a></li>
+              <li class="last"><a href="#" title="Where is my order?">Օգնության Կենտրոն</a></li>
+            </ul>
+          </div>
+           /.module-body > 
+        </div>
+        !-- /.col -
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="module-heading">
+            <h4 class="module-title">Ինչու Մենք</h4>
+          </div>
+          <!- /.module-heading -
+          
+          <div class="module-body">
+            <ul class='list-unstyled'>
+              <li class="first"><a href="#" title="About us">Մեր Մասին</a></li>
+              <li><a href="#" title="Blog">Բլոգ</a></li>
+              <li class=" last"><a href="contact-us.html" title="Suppliers">Կապ Մեզ Հետ</a></li>
+            </ul>
+          </div>
+          <-- /.module-body -> 
         </div>
       </div>
-    </footer>
+    </div>
+  </div> -->
+  <div class="copyright-bar white-bg">
+    <div class="container">
+      <div class="col-xs-12 col-sm-7 col-md-12 col-lg-7 del-info">
+        Մենք ունենք մեր սեփական առաքման ավտոմեքենաների փականը։ Ձեր պատվերները կփաթեթավորվեն ուշադիր մեր պահեստում և առաքվեն ուղիղ ձեր դուռը մեր բարեկամական DailyBox թիմի կողմից։
+      </div>
+      
+      <div class="col-xs-12 col-sm-5 col-md-12 col-lg-5 no-padding">
+        <div class="clearfix payment-methods">
+          <ul>
+            <li><img src="assets/images/payments/6.png" alt="Telcell Wallet"></li>
+            <li><img src="assets/images/payments/7.png" alt="Idram"></li>
+            <li><img src="assets/images/payments/2.png" alt="Visa"></li>
+            <li><img src="assets/images/payments/3.png" alt="American Express"></li>
+            <li><img src="assets/images/payments/4.png" alt="Master Card"></li>
+           
+          </ul>
+        </div>
+        <!-- /.payment-methods --> 
+      </div>
+    </div>
+  </div>
+  <div class="copyright-bar">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 no-padding social">
+        <ul class="link">
+          <li class="instagram"><a target="_blank" rel="nofollow" href="https://www.instagram.com/daily_box_armenia/" title="Instagram"></a></li>
+          <li class="pintrest"><a target="_blank" rel="nofollow" href="https://www.pinterest.com/dailybox_armenia/" title="Pinterest"></a></li>
+          <li class="tiktok"><a target="_blank" rel="nofollow" href="https://www.tiktok.com/@dailybox_armenia" title="tiktok"></a></li>
+          <li class="youtube"><a target="_blank" rel="nofollow" href="https://www.youtube.com/@dailybox_armenia" title="Youtube"></a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 no-padding copyright">&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> DailyBox: Բոլոր իրավունքները պաշտպանված են: </div>
+      
+    </div>
+  </div>
+</footer>
     <!-- ============================================================= FOOTER : END============================================================= --> 
       
 			

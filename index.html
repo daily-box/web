@@ -33,6 +33,9 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!-- Font Awesome CDN (v6 recommended) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body class="cnt-home">
 <!-- ============================================== HEADER ============================================== -->
@@ -44,24 +47,27 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="#"><i class="icon fa fa-heart"></i>Ցանկությունների ցանկ</a></li>
+            <!-- <li><a href="#"><i class="icon fa fa-heart"></i>Ցանկությունների ցանկ</a></li>
             <li><a href="#"><i class="icon fa fa-shopping-cart"></i>Իմ Սայլը</a></li>
-            <li><a href="#"><i class="icon fa fa-check"></i>Դրամարկղ</a></li>
+            <li><a href="#"><i class="icon fa fa-check"></i>Դրամարկղ</a></li> -->
             <!-- <li><a href="sign-in.html"><i class="icon fa fa-lock"></i>Become a Vendor</a></li> -->
+             <li><a href="products.html"><i class="icon fas fa-shopping-bag"></i><span>Ապրանքներ</span></a></li>
+             <li><a href="blog.html"><i class="icon fas fa-newspaper"></i><span>Հետաքրիր Տեղեկություններ</span></a></li>
+             <li><a href="contact.html"><i class="icon fas fa-phone"></i><span>Կապ Մեզ Հետ</span></a></li>
           </ul>
         </div>
         <!-- /.cnt-account -->
         
         <div class="cnt-block">
           <ul class="list-unstyled list-inline">
-            <li> <a href="#"><span class="value">Մեր Մասին </span></a></li>
-            <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">Հայերեն </span><b class="caret"></b></a>
+            <li> <a href="about.html"><span class="value">Մեր Մասին </span></a></li>
+            <!-- <li class="dropdown dropdown-small"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="value">Հայերեն </span><b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Հայերեն</a></li>
                 <li><a href="#">English</a></li>
                 <li><a href="#">Русский</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
            <!-- /.list-unstyled  -->
         </div>
@@ -79,7 +85,7 @@
       <div class="row">
         <div class="col-xs-12 col-lg-2 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="index.html"> <img src="assets/images/logo.png" alt="logo"> </a> </div>
+          <div class="logo"> <a href="index.html"> <img src="assets/images/logo.png" alt="DailyBox"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -110,7 +116,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Գլխավոր</a></li>
                 <li><a href="products.html">Ապրանքներ</a></li>
-                <li><a href="#">Կապ</a></ul>
+                <li><a href="contact.html">Կապ</a></ul>
                 </li>
             
               </ul>
@@ -128,7 +134,15 @@
       <div class="top-cart-row"> 
           <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
           
-          <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+          <div class="dropdown dropdown-cart"> 
+            <a href="tel:+37498880237" class="lnk-cart">
+              <div class="items-cart-inner">
+                <div class="basket"> <i class="glyphicon glyphicon-phone"></i> </div>
+                <div class="total-price-basket"> <span class="lbl">Զանգել</span>  </div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
             <div class="items-cart-inner">
               <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
               <div class="basket-item-count"><span class="count">2</span></div>
@@ -149,7 +163,6 @@
                     <div class="col-xs-1 action"> <a href="#"><i class="fa fa-trash"></i></a> </div>
                   </div>
                 </div>
-                <!-- /.cart-item -->
                 <div class="clearfix"></div>
                 <hr>
                 <div class="clearfix cart-total">
@@ -157,15 +170,13 @@
                   <div class="clearfix"></div>
                    <a href="shopping-cart.html" class="btn btn-upper btn-primary btn-block m-t-20">Դիտել Սայլը</a>
                   <a href="checkout.html" class="btn btn-upper btn-primary btn-block m-t-20 btn-check">Դրամարկղ</a> </div>
-                <!-- /.cart-total--> 
                 
               </li>
             </ul>
-            <!-- /.dropdown-menu--> 
           </div>
-          <!-- /.dropdown-cart --> 
+          </div> /.dropdown-cart  -->
           
-          <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> </div>
+          <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> 
     </div>
     <!-- /.container-class --> 
     
@@ -329,22 +340,22 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> 
-                          <a href="deals-detail.html">
+                          <a href="lunchbox.html">
                              <img src="assets/images/products/p1.jpg" alt="LunchBox"> 
                                </a> 
                        </div>
                           <!-- /.image -->
                           
-                          <div class="tag new"><span>-15%</span></div>
+                          <!-- <div class="tag new"><span>-15%</span></div> -->
                         </div>
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
                         <div class="brand">LunchBox</div>
-                          <h3 class="name"><a href="deals-detail.html">Լանչբոքս</a></h3>
+                          <h3 class="name"><a href="lunchbox.html">Լանչբոքս</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
-                          <div class="product-price"> <span class="price"> 1․200 ֏ </span> <span class="price-before-discount"> 1․000 ֏ </span> </div>
+                          <div class="product-price"> <span class="price"> 2.000 ֏ </span> <!--<span class="price-before-discount"> 1․000 ֏ </span>--> </div>
                           <!-- /.product-price --> 
                           
                         </div>
@@ -352,12 +363,12 @@
                         <div class="cart clearfix animate-effect">
                           <div class="action">
                             <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
+                              <!-- <li class="add-cart-button btn-group">
                                 <button data-toggle="tooltip" class="btn btn-primary icon" type="button" title="Add Cart"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Ավելացնել Սայլ</button>
                               </li>
-                              <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                              <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              <li class="lnk wishlist"> <a data-toggle="tooltip" class="add-to-cart" href="deals-detail.html" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li> -->
+                              <li class="lnk"> <a data-toggle="tooltip" class="add-to-cart" href="pochacco.html" title="Compare"> <i class="fa fa-search" aria-hidden="true"></i> Տեսնել Ավելին</a> </li>
                             </ul>
                           </div>
                           <!-- /.action --> 
@@ -376,7 +387,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> 
-                          <a href="deals-detail.html">
+                          <a href="pochacco.html">
                              <img src="assets/images/products/p2.jpg" alt="Pochachon"> 
                           </a>
                            </div>
@@ -388,10 +399,10 @@
                         
                         <div class="product-info text-left">
                         <div class="brand">Pochachon</div>
-                          <h3 class="name"><a href="deals-detail.html">Պոչաչոն</a></h3>
+                          <h3 class="name"><a href="pochacco.html">Պոչաչոն</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
-                          <div class="product-price"> <span class="price"> 900 ֏ </span> <span class="price-before-discount"> 800 ֏ </span> </div>
+                          <div class="product-price"> <span class="price"> 1.700 ֏ </span> <!--<span class="price-before-discount"> 800 ֏ </span>--> </div>
                           <!-- /.product-price --> 
                           
                         </div>
@@ -399,11 +410,11 @@
                         <div class="cart clearfix animate-effect">
                           <div class="action">
                             <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
+                              <!-- <li class="add-cart-button btn-group">
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Ավելացնել Սայլ</button>
-                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="#" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li> -->
+                        <li class="lnk"> <a class="add-to-cart" href="pochacco.html" title="Compare"> <i class="fa fa-search" aria-hidden="true"></i> Տեսնել Ավելին</a> </li>
                             </ul>
                           </div>
                           <!-- /.action --> 
@@ -422,22 +433,22 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> 
-                           <a href="deals-detail.html">
+                           <a href="home-fragrance.html">
                              <img src="assets/images/products/p3.jpg" alt="Home fragrance"> 
                                </a>
                            </div>
                           <!-- /.image -->
                           
-                          <div class="tag sale"><span>Թեժ</span></div>
+                          <!-- <div class="tag sale"><span>Թեժ</span></div> -->
                         </div>
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
                         <div class="brand">Black Rose</div>
-                          <h3 class="name"><a href="deals-detail.html">Տնային բուրմունք</a></h3>
+                          <h3 class="name"><a href="home-fragrance.html">Տնային բուրմունք</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
-                          <div class="product-price"> <span class="price"> 2.500 ֏ </span> <span class="price-before-discount"> 2.000 ֏ </span> </div>
+                          <div class="product-price"> <span class="price"> 1.500 ֏ </span> <!--<span class="price-before-discount"> 2.000 ֏ </span>--> </div>
                           <!-- /.product-price --> 
                           
                         </div>
@@ -445,11 +456,11 @@
                         <div class="cart clearfix animate-effect">
                           <div class="action">
                             <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
+                              <!-- <li class="add-cart-button btn-group">
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Ավելացնել Սայլ</button>
-                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="#" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li> -->
+                        <li class="lnk"> <a class="add-to-cart" href="home-fragrance.html" title="Compare"> <i class="fa fa-search" aria-hidden="true"></i> Տեսնել Ավելին</a> </li>
                             </ul>
                           </div>
                           <!-- /.action --> 
@@ -468,7 +479,7 @@
                       <div class="product">
                         <div class="product-image">
                           <div class="image"> 
-                           <a href="deals-detail.html">
+                           <a href="linti.html">
                              <img src="assets/images/products/p4.jpg" alt="Lint Roller"> 
                           </a> 
                           </div>
@@ -480,10 +491,10 @@
                         
                         <div class="product-info text-left">
                         <div class="brand">Solaticdo</div>
-                          <h3 class="name"><a href="deals-detail.html">Լվացվող բազմակի օգտագործման գել` Լինտի մաքրող գնդակ</a></h3>
+                          <h3 class="name"><a href="linti.html">Լվացվող բազմակի օգտագործման գել` Լինտի մաքրող գնդակ</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
-                          <div class="product-price"> <span class="price"> 500 ֏ </span> <span class="price-before-discount"> 450 ֏ </span> </div>
+                          <div class="product-price"> <span class="price"> 500 ֏ </span> <!--<span class="price-before-discount"> 450 ֏ </span>--> </div>
                           <!-- /.product-price --> 
                           
                         </div>
@@ -491,11 +502,11 @@
                         <div class="cart clearfix animate-effect">
                           <div class="action">
                             <ul class="list-unstyled">
-                              <li class="add-cart-button btn-group">
+                              <!-- <li class="add-cart-button btn-group">
                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button"> <i class="fa fa-shopping-cart"></i> </button>
                                 <button class="btn btn-primary cart-btn" type="button">Ավելացնել Սայլ</button>
-                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li>
-                        <li class="lnk"> <a class="add-to-cart" href="#" title="Compare"> <i class="fa fa-signal" aria-hidden="true"></i> </a> </li>
+                              </li>                        <li class="lnk wishlist"> <a class="add-to-cart" href="#" title="Wishlist"> <i class="icon fa fa-heart"></i> </a> </li> -->
+                        <li class="lnk"> <a class="add-to-cart" href="linti.html" title="Compare"> <i class="fa fa-search" aria-hidden="true"></i> Տեսնել Ավելին</a> </li>
                             </ul>
                           </div>
                           <!-- /.action --> 
@@ -726,7 +737,7 @@
         
     
 <!-- ============================================== Coupons  ============================================== -->
-        <section class="section coupons-section">
+        <section class="section coupons-section" style="display: none;">
         <div class="container">
           <h3 class="section-title">Latest Coupons</h3>
           
@@ -964,21 +975,21 @@
           <div class="col-xs-12 col-sm-12 col-md-12"> 
         <!-- ============================================== BLOG SLIDER ============================================== -->
         <section class="section blog-section outer-bottom-xs wow fadeInUp">
-          <h3 class="section-title">Latest form Blog</h3>
+          <h3 class="section-title">Հետաքրիր տեղեկություններ</h3>
           <div class="latest-blog">
           <div class="blog-slider-container outer-top-xs">
             <div class="owl-carousel blog-slider custom-carousel">
               <div class="item">
                 <div class="blog-post">
                   <div class="blog-post-image">
-                    <div class="image"> <a href="blog.html"><img src="assets/images/blog-post/blog_big_01.jpg" alt=""></a> </div>
+                    <div class="image"> <a href="about-lunchbox-info.html"><img src="assets/images/blog-post/blog_big_01.jpg" alt="Lunchbox"></a> </div>
                   </div>
                   <!-- /.blog-post-image -->
                   
                   <div class="blog-post-info text-left">
-                    <h3 class="name"><a href="#">Voluptatem accusantium doloremque laudantium</a></h3>
-                    <span class="info">By Jone Doe &nbsp;|&nbsp; 21 March 2019 </span>
-                    <p class="text">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <h3 class="name"><a href="about-lunchbox-info.html">Ի՞նչ Չգիտեիր Լանչբոքսների Մասին</a></h3>
+                    <span class="info">DailyBox-ի կողմից &nbsp;|&nbsp; Մայիսի 28 2025 </span>
+                    <p class="text">1950 թվականին Aladdin Industries ընկերությունը թողարկեց առաջին․․․</p>
                    </div>
                   <!-- /.blog-post-info --> 
                   
@@ -990,14 +1001,14 @@
               <div class="item">
                 <div class="blog-post">
                   <div class="blog-post-image">
-                    <div class="image"> <a href="blog.html"><img src="assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
+                    <div class="image"> <a href="about-home-fragrance-info.html"><img src="assets/images/blog-post/blog_big_02.jpg" alt="Home Fragrance"></a> </div>
                   </div>
                   <!-- /.blog-post-image -->
                   
                   <div class="blog-post-info text-left">
-                    <h3 class="name"><a href="#">Dolorem eum fugiat quo voluptas nulla pariatur</a></h3>
-                    <span class="info">By Saraha Smith &nbsp;|&nbsp; 21 March 2019 </span>
-                    <p class="text">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <h3 class="name"><a href="about-home-fragrance-info.html">Հետաքրքիր Փաստեր Տան Բուրմունքի Մասին</a></h3>
+                    <span class="info">DailyBox-ի կողմից &nbsp;|&nbsp; Մայիսի 11 2025 </span>
+                    <p class="text">Հատուկ բույրերը, ինչպիսիք են լավանդան, ցիտրուսը կամ վանիլը, կարող․․․</p>
                    </div>
                   <!-- /.blog-post-info --> 
                   
@@ -1011,14 +1022,14 @@
               <div class="item">
                 <div class="blog-post">
                   <div class="blog-post-image">
-                    <div class="image"> <a href="blog.html"><img src="assets/images/blog-post/blog_big_03.jpg" alt=""></a> </div>
+                    <div class="image"> <a href="about-labubu-info.html"><img src="assets/images/blog-post/blog_big_03.jpg" alt="Labubu"></a> </div>
                   </div>
                   <!-- /.blog-post-image -->
                   
                   <div class="blog-post-info text-left">
-                    <h3 class="name"><a href="#">Dolorem eum fugiat quo voluptas nulla pariatur</a></h3>
-                    <span class="info">By Saraha Smith &nbsp;|&nbsp; 21 March 2019 </span>
-                    <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                    <h3 class="name"><a href="about-labubu-info.html">Հետաքրքիր Փաստեր Labubu-ի Մասին</a></h3>
+                    <span class="info">DailyBox-ի կողմից &nbsp;|&nbsp; Ապրիլի 26 2025 </span>
+                    <p class="text">Labubu-ն մի կերպար է, որը մաս է կազմում The Monsters շարքից՝ ստեղծված...</p>
                     </div>
                   <!-- /.blog-post-info --> 
                   
@@ -1026,44 +1037,6 @@
                 <!-- /.blog-post --> 
               </div>
               <!-- /.item -->
-              
-              <div class="item">
-                <div class="blog-post">
-                  <div class="blog-post-image">
-                    <div class="image"> <a href="blog.html"><img src="assets/images/blog-post/blog_big_01.jpg" alt=""></a> </div>
-                  </div>
-                  <!-- /.blog-post-image -->
-                  
-                  <div class="blog-post-info text-left">
-                    <h3 class="name"><a href="#">Dolorem eum fugiat quo voluptas nulla pariatur</a></h3>
-                    <span class="info">By Saraha Smith &nbsp;|&nbsp; 21 March 2019 </span>
-                    <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                    </div>
-                  <!-- /.blog-post-info --> 
-                  
-                </div>
-                <!-- /.blog-post --> 
-              </div>
-              <!-- /.item -->
-              
-              <div class="item">
-                <div class="blog-post">
-                  <div class="blog-post-image">
-                    <div class="image"> <a href="blog.html"><img src="assets/images/blog-post/blog_big_02.jpg" alt=""></a> </div>
-                  </div>
-                  <!-- /.blog-post-image -->
-                  
-                  <div class="blog-post-info text-left">
-                    <h3 class="name"><a href="#">Dolorem eum fugiat quo voluptas nulla pariatur</a></h3>
-                    <span class="info">By Saraha Smith &nbsp;|&nbsp; 21 March 2019 </span>
-                    <p class="text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                  </div>
-                  <!-- /.blog-post-info --> 
-                  
-                </div>
-                <!-- /.blog-post --> 
-              </div>
-              <!-- /.item --> 
               
             </div>
             <!-- /.owl-carousel --> 
@@ -1080,14 +1053,14 @@
 
     <!-- ============================================================= FOOTER ============================================================= -->
 <footer id="footer" class="footer color-bg">
-  <div class="footer-bottom">
+  <!-- <div class="footer-bottom">
     <div class="container">
       <div class="row">
      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <div class="module-heading">
             <h4 class="module-title">Օգնություն և Աջակցություն</h4>
           </div>
-          <!-- /.module-heading -->
+          /.module-heading 
           
           <div class="module-body">
             <ul class='list-unstyled'>
@@ -1096,13 +1069,13 @@
               <li class="last"><a href="#" title="Where is my order?">Առաքումներ</a></li>
             </ul>
           </div>
-          <!-- /.module-body --> 
+          /.module-body 
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <div class="module-heading">
             <h4 class="module-title">Հաճախորդների Սպասարկում</h4>
           </div>
-          <!-- /.module-heading -->
+          </.module-heading >
           
           <div class="module-body">
             <ul class='list-unstyled'>
@@ -1111,15 +1084,15 @@
               <li class="last"><a href="#" title="Where is my order?">Օգնության Կենտրոն</a></li>
             </ul>
           </div>
-          <!-- /.module-body --> 
+           /.module-body > 
         </div>
-        <!-- /.col -->
+        !-- /.col -
         
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <div class="module-heading">
             <h4 class="module-title">Ինչու Մենք</h4>
           </div>
-          <!-- /.module-heading -->
+          <!- /.module-heading -
           
           <div class="module-body">
             <ul class='list-unstyled'>
@@ -1128,11 +1101,11 @@
               <li class=" last"><a href="contact-us.html" title="Suppliers">Կապ Մեզ Հետ</a></li>
             </ul>
           </div>
-          <!-- /.module-body --> 
+          <-- /.module-body -> 
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="copyright-bar white-bg">
     <div class="container">
       <div class="col-xs-12 col-sm-7 col-md-12 col-lg-7 del-info">
@@ -1142,10 +1115,11 @@
       <div class="col-xs-12 col-sm-5 col-md-12 col-lg-5 no-padding">
         <div class="clearfix payment-methods">
           <ul>
-            <li><img src="assets/images/payments/1.png" alt=""></li>
-            <li><img src="assets/images/payments/2.png" alt=""></li>
-            <li><img src="assets/images/payments/3.png" alt=""></li>
-            <li><img src="assets/images/payments/4.png" alt=""></li>
+            <li><img src="assets/images/payments/6.png" alt="Telcell Wallet"></li>
+            <li><img src="assets/images/payments/7.png" alt="Idram"></li>
+            <li><img src="assets/images/payments/2.png" alt="Visa"></li>
+            <li><img src="assets/images/payments/3.png" alt="American Express"></li>
+            <li><img src="assets/images/payments/4.png" alt="Master Card"></li>
            
           </ul>
         </div>
@@ -1157,11 +1131,10 @@
     <div class="container">
       <div class="col-xs-12 col-sm-12 no-padding social">
         <ul class="link">
-          <li class="fb"><a target="_blank" rel="nofollow" href="#" title="Facebook"></a></li>
-          <li class="tw"><a target="_blank" rel="nofollow" href="#" title="Twitter"></a></li>
-          <li class="instagram"><a target="_blank" rel="nofollow" href="#" title="Instagram"></a></li>
-          <li class="pintrest"><a target="_blank" rel="nofollow" href="#" title="Pinterest"></a></li>
-          <li class="youtube"><a target="_blank" rel="nofollow" href="#" title="Youtube"></a></li>
+          <li class="instagram"><a target="_blank" rel="nofollow" href="https://www.instagram.com/daily_box_armenia/" title="Instagram"></a></li>
+          <li class="pintrest"><a target="_blank" rel="nofollow" href="https://www.pinterest.com/dailybox_armenia/" title="Pinterest"></a></li>
+          <li class="tiktok"><a target="_blank" rel="nofollow" href="https://www.tiktok.com/@dailybox_armenia" title="tiktok"></a></li>
+          <li class="youtube"><a target="_blank" rel="nofollow" href="https://www.youtube.com/@dailybox_armenia" title="Youtube"></a></li>
         </ul>
       </div>
       <div class="col-xs-12 col-sm-12 no-padding copyright">&copy; <script>new Date().getFullYear()>document.write(new Date().getFullYear());</script> DailyBox: Բոլոր իրավունքները պաշտպանված են: </div>
