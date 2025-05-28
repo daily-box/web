@@ -1341,10 +1341,9 @@ a {
   
 }
 .cnt-account ul > li a .icon {
-  display: block;
   float: left;
   padding-right: 6px;
-  font-size: 11px;
+  font-size: 18px;
   display:none
 }
 .cnt-account ul > li a:hover,
@@ -3672,6 +3671,18 @@ background:none
 	text-align: center;
 	padding: 0;
 	background: #3C5B9B !important;
+}
+
+.social .tiktok a:before {
+	content: "\e07b";
+	font-family: FontAwesome;
+}
+.social .tiktok a {
+	font-size: 16px;
+	display: inline-block!important;
+	text-align: center;
+	padding: 0;
+	background: #000000 !important;
 }
 .social .instagram a:before {
 	content: "\f16d";
@@ -6332,6 +6343,64 @@ height:25px
 
 .box-timer h5 {float:left;margin-right:10px;margin-top: 7px;}
 
+.btns-for-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.btns-for-list a{
+    padding: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    background: #f5f5f5;
+    color: #FE2C55;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btns-for-list a.active{
+    background: #FE2C55;
+    color: #fff;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+
 /*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/
@@ -6608,6 +6677,10 @@ ul.categories-filter .dropdown {
 .tab-pane.custom-carousel .owl-controls .owl-prev {
 	top:-32px;
 	    right: 32px;
+}
+
+.cnt-account ul > li a .icon {
+  display: block;
 }
 }
 @media(min-width: 480px) and (max-width: 767px){
@@ -6891,6 +6964,9 @@ margin-bottom:0px;
 }
 .body-content .faq-page h2 {
     font-size: 24px;
+}
+.cnt-account ul > li a .icon {
+  display: block;
 }
 }
 /* Extra small devices (phones, less than 768px) */
