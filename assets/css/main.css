@@ -6548,6 +6548,8 @@ ul.categories-filter .dropdown {
 .top-bar .header-top-inner .cnt-block .list-inline li.lang{display: none;}
 .top-bar .header-top-inner .cnt-block .list-inline li {
     float: left;
+    padding-left: 0;
+    padding-right: 0;
 }
 .our-features-box .feature-box {
     text-align: left;
