@@ -440,6 +440,10 @@
                         <label for="phone">Ձեր Համարը</label>
                         <input class="form-control txt" type="text" id="phone" placeholder="Հեռախոսահամար">
                       </div>
+                      <div class="form-group">
+                        <label for="qnt">Քանակ</label>
+                        <input class="form-control txt" type="number" min="1" id="qnt" placeholder="1" value="1">
+                      </div>
                       <button class="btn btn-primary" onclick="sendWhatsApp()">Պատվիրել</button>
                     </div>
                   </div>
@@ -939,12 +943,13 @@ Yokoba-ն դարձել է վստահելի ընտրություն գործնակ
   </script>
   <script>
     function sendWhatsApp() {
-      const product = "Lunchbox"; // example
-      const price = "2000";        // example
+      const product = "Լանչբոքս"; // example
+      const price = "2000 ֏";        // example
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
+      const qnt = document.getElementById("qnt").value;
 
-      const message = `Ապրանք: ${product}%0AԳին: ${price}%0AԳնորդ: ${name}%0AՀեռախոսահամար: ${phone}`;
+      const message = `Ապրանք - ${product}%0AԳին - ${price}%0AՔանակ - ${qnt}%0AԳնորդ - ${name}%0AՀեռախոսահամար - ${phone}`;
       const whatsappNumber = "+37477992109"; // Replace with your number (with country code)
 
       const url = `https://wa.me/${whatsappNumber}?text=${message}`;
